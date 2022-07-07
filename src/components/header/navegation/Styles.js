@@ -7,7 +7,7 @@ export const NavegationSection = styled.section`
   justify-content: center;
   height: 80px;
   img{
-    height: 3vw;
+    height: 6vh;
     position: fixed;
     left: 5vw;
   }
