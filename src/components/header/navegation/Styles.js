@@ -5,12 +5,10 @@ export const NavegationSection = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  border: solid green 1px;
   height: 80px;
   img{
-    height: 55px;
+    height: 3vw;
     position: fixed;
-    top: 12.5px;
     left: 5vw;
   }
 `

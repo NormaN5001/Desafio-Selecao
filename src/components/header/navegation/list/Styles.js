@@ -5,7 +5,8 @@ export const UList = styled.ul`
   list-style: none;
 `
 export const Items = styled.li`
-  font-size: 25px;
+  color: #FFFFFF;
+  font-size: 2.5vh;
   padding: 0 30px 3px 30px;
   transition: 0.3s;
   border: solid 2px transparent;

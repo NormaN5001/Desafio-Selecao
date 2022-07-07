@@ -3,6 +3,7 @@ import { createGlobalStyle } from "styled-components"
 import styled from 'styled-components';
 
 import Navegation from './components/header/navegation/Navegation'
+import Subscription from './components/header/subscription/Subscription'
 
 const GlobalStyle = createGlobalStyle`
    *{
@@ -27,6 +28,7 @@ export default function App(){
     <Container>
       <GlobalStyle/>
       <Navegation/>
+      <Subscription/>
     </Container>
     
   )
