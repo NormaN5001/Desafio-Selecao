@@ -6,7 +6,7 @@ export const UList = styled.ul`
 `
 export const Items = styled.li`
   color: #FFFFFF;
-  font-size: 2.5vh;
+  font-size: 1.4vw;
   padding: 0 30px 3px 30px;
   transition: 0.3s;
   border: solid 2px transparent;
@@ -14,5 +14,8 @@ export const Items = styled.li`
   &:hover{
     border: solid #FFAC2D 2px;
     cursor: pointer;
+  }
+  @media(max-width: 1200px){
+    font-size: 1.8vw;
   }
 `

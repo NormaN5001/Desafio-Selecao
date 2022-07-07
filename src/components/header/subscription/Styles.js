@@ -13,26 +13,33 @@ export const SubscriptionSection = styled.section`
   height: 100vh;
 `
 export const Contents = styled.section`
-  border: solid white 2px;
-  margin: 250px 10vw 0 10vw;
-  height: 600px;
-  @media(max-width: 1600px){
-    margin: 160px 0 0 50px;
-  }
+  margin: 20vh 10vw 0 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `
 export const TitleBox = styled.h1`
-  border: solid red;
   color: #FFAC2D;
-  font-size: 65px;
-  width: 90%;
+  font-size: 3.2vw;
+  width: 80%;
   span{
     letter-spacing: -10px;
-    font-size: 65px;
+    font-size: 3.2vw;
     color: #FF611E;
     font-weight: 100;
+    @media(max-width: 1500px){
+      letter-spacing: -7px;
+    }
   }
   @media(max-width: 1500px){
-    font-size: 55px;
-    width: 100%;
+    font-size: 3vw;
+  }
+`
+export const TextLink = styled.h3`
+  margin-top: 10px;
+  color: #FED5B2;
+  font-size: 1.4vw;
+  span{
+    font-weight: 400;
   }
 `

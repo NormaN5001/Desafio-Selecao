@@ -7,6 +7,16 @@ export const Card = styled.section`
   background-color: #FFFFFF;
   border-radius: 20px;
   position: relative;
+  @media(min-width: 1900px){
+    margin-top: 80px;
+    height: 280px;
+  }
+  @media(max-width: 1500px){
+    height: 200px;
+  }
+  @media(max-width: 1200px){
+    width: 55%;
+  }
 `
 export const Spots = styled.div`
   position: absolute;
@@ -36,16 +46,25 @@ export const TitleCard = styled.h2`
   top: 85px;
   left: 22px;
   color: #00145D;
-  font-size: 45px;
+  font-size: 2.3vw;
+  @media(max-width: 1500px){
+    top: 75px;
+  }
 `
 export const SubTitle = styled.h3`
   position: absolute;
   top: 160px;
   left: 22px;
-  font-size: 30px;
+  font-size: 1.8vw;
   font-weight: 400;
   color: #272727;
   span{
     font-weight: 500;
+  }
+  @media(max-width: 1500px){
+    top: 130px;
+  }
+  @media(min-width: 1900px){
+    top: 180px;
   }
 `
