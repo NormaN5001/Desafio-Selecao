@@ -1,5 +1,16 @@
 import styled from 'styled-components';
 
+export const TopSection = styled.section`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  img{
+    height: 3vw;
+    position: fixed;
+    left: 5vw;
+  }
+`
 export const UList = styled.ul`
   display: flex;
   list-style: none;

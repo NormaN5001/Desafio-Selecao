@@ -2,8 +2,8 @@ import React from 'react'
 import { createGlobalStyle } from "styled-components"
 import styled from 'styled-components';
 
-import Navegation from './components/header/navegation/Navegation'
-import Subscription from './components/header/subscription/Subscription'
+import Header from './components/header/Header'
+import Main from './components/main/Main'
 
 const GlobalStyle = createGlobalStyle`
    *{
@@ -13,13 +13,6 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 const Container = styled.section`
-  margin: 0 5vw 0 5vw;
-  @media(max-width: 1024px){
-    margin: 0 30px 0 30px;
-  }
-  @media(max-width: 500px){
-    margin: 0;
-  }
 `
 
 export default function App(){
@@ -27,8 +20,8 @@ export default function App(){
   return(
     <Container>
       <GlobalStyle/>
-      <Navegation/>
-      <Subscription/>
+      <Header/>
+      <Main/>
     </Container>
     
   )
