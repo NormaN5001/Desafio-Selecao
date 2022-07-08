@@ -1,17 +1,18 @@
 import styled from 'styled-components';
 
 export const AboutSection = styled.section`
-  margin-top: 70px;
+  margin-top: 79px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 700px;
+  
 `
 export const Logo = styled.img`
   width: 30%;
 `
 export const AboutText = styled.section`
+  padding-right: 5vw;
   width: 58%;
   display: flex;
   flex-direction: column;
@@ -24,11 +25,8 @@ export const TitleBox = styled.h4`
 `
 export const TextAbout = styled.div`
   margin-top: 36px;
-  height: 600px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
  p{
+  margin-top: 35px;
   color: #000000;
   font-size: 1.5vw;
  }

@@ -8,7 +8,6 @@ export const Card = styled.section`
   border-radius: 20px;
   position: relative;
   @media(min-width: 1900px){
-    margin-top: 80px;
     height: 280px;
   }
   @media(max-width: 1500px){
@@ -47,9 +46,6 @@ export const TitleCard = styled.h2`
   left: 22px;
   color: #00145D;
   font-size: 2.3vw;
-  @media(max-width: 1500px){
-    top: 75px;
-  }
 `
 export const SubTitle = styled.h3`
   position: absolute;
@@ -60,11 +56,5 @@ export const SubTitle = styled.h3`
   color: #272727;
   span{
     font-weight: 500;
-  }
-  @media(max-width: 1500px){
-    top: 130px;
-  }
-  @media(min-width: 1900px){
-    top: 180px;
   }
 `
