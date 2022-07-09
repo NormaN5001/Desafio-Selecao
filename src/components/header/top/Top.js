@@ -30,6 +30,18 @@ export default function Top(){
       behavior: "smooth"
     })
   }
+  const goToEvents = ()=>{
+    window.scrollTo({
+      top: 4600,
+      behavior: "smooth"
+    })
+  }
+  const goToContacts = ()=>{
+    window.scrollTo({
+      top: 5300,
+      behavior: "smooth"
+    })
+  }
 
 
 
@@ -42,8 +54,8 @@ export default function Top(){
             <S.Items onClick={()=>{goToAbout()}}>Sobre</S.Items>
             <S.Items onClick={()=>{goToFormation()}}>Formação</S.Items>
             <S.Items onClick={()=>{goToTeam()}}>Equipe</S.Items>
-            <S.Items>Eventos</S.Items>
-            <S.Items>Contatos</S.Items>
+            <S.Items onClick={()=>{goToEvents()}}>Eventos</S.Items>
+            <S.Items onClick={()=>{goToContacts()}}>Contatos</S.Items>
           </S.UList>
       </nav>
       </S.TopSection>
