@@ -18,13 +18,9 @@ import Photo14 from '../../../../images/team/photo15.jpg'
 import Photo15 from '../../../../images/team/photo8.jpg'
 
 
-export default function Search(){
+export default function SearchTeam(){
 
-  const [team, setTeam] = useState([])
-
-
-  useEffect(()=>{
-    setTeam([
+  const [team, setTeam] = useState([
       {
         name: "Dimitri Duque",
         function: "#voluntários",
@@ -101,25 +97,33 @@ export default function Search(){
         photo: `${Photo15}`
       },
     ])
+
+  const [teamFilter, setTeamFilter] = useState([])
+
+  useEffect(()=>{
+    setTeamFilter(team)
   }, [])
-
-  
-
+ 
   return(
       <>
         <S.SectionInput>
           <input type="text" placeholder="Pesquisar..." onChange={(event)=>{
-            const NamesFilter = team.filter(item => {
+            
+            if(event.target.value !== "" || null){
+              const NamesFilter = team.filter(item => {
               if(item.name.toLowerCase().includes(event.target.value.toLowerCase())){
                 return true;
               }
             })
-            setTeam(NamesFilter)
+            setTeamFilter(NamesFilter)
+          }else{
+            setTeamFilter(team)
+          }
           }}/>
 
         </S.SectionInput>
         <S.TeamSection>
-          {team.map(item => (
+          {teamFilter.map(item => (
 
               <S.Person>
                 <img src={item.photo} alt="Foto de um integrante da VNW"/>
