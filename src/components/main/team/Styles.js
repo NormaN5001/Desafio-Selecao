@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const TeamSection = styled.section`
-  margin: 230px 5vw;
+  margin: 230px 5vw 0 0;
 `
 export const TitleBox = styled.h4`
   font-family: 'Montserrat', sans-serif;

@@ -5,6 +5,13 @@ import Logo from '../../../images/all/logo-vnw-small.png'
 
 export default function Top(){
 
+  const goToTop = ()=>{
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    })
+  }
+
   const goToAbout = ()=>{
     window.scrollTo({
       top: 1100,
@@ -29,7 +36,7 @@ export default function Top(){
   return(
     <>
       <S.TopSection>
-        <img src={Logo} alt="Logo do Vai na Web."/>
+        <img onClick={()=>{goToTop()}} src={Logo} alt="Logo do Vai na Web."/>
         <nav>
           <S.UList>
             <S.Items onClick={()=>{goToAbout()}}>Sobre</S.Items>

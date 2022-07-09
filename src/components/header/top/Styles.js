@@ -6,6 +6,7 @@ export const TopSection = styled.section`
   justify-content: center;
   height: 80px;
   img{
+    cursor: pointer;
     height: 3vw;
     position: fixed;
     left: 5vw;
