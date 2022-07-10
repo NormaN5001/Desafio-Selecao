@@ -7,52 +7,40 @@ export const FormationSection = styled.section`
   align-items: center;
   img{
     width: 50%;
+    @media(max-width: 1024px){
+      width: 45%;
+    }
   }
 `
 export const FormationLeft = styled.div`
 `
-export const TitleBox = styled.h4`
-  font-family: 'Montserrat', sans-serif;
-  color: #0F2260;
-  font-size: 2.5vw;
-  font-weight: bold;
-`
 export const FrontEnd = styled.div`
   display: flex;
   margin-top: 30px;
-  h5{
-    font-family: 'Montserrat', sans-serif;
-    color: #0F2260;
-    font-size: 1.5vw;
-    text-transform: uppercase;
-  }
-  p{
-    margin-top: 15px;
-    font-family: 'Montserrat', sans-serif;
-    color: #000000;
-    font-size: 1vw;
-    font-weight: 500;
-    width: 380px;
+  img{
+    width: 120px;
+    height: 120px;
+    @media(max-width: 1200px){
+      width: 90px;
+      height: 90px;
+    }
   }
 `
 export const Texts = styled.div`
   margin-left: 50px;
+  @media(max-width: 1200px){
+  margin-left: 20px; 
+  }
 `
 export const BackEnd = styled.div`
   display: flex;
   margin-top: 50px;
-  h5{
-    font-family: 'Montserrat', sans-serif;
-    color: #0F2260;
-    font-size: 1.5vw;
-    text-transform: uppercase;
-  }
-  p{
-    margin-top: 15px;
-    font-family: 'Montserrat', sans-serif;
-    color: #000000;
-    font-size: 1vw;
-    font-weight: 500;
-    width: 380px;
+  img{
+    width: 120px;
+    height: 120px;
+    @media(max-width: 1200px){
+      width: 90px;
+      height: 90px;
+    }
   }
 `

@@ -1,12 +1,13 @@
 import React from 'react'
 import * as S from './Styles'
 import NotebookImg from '../../../images/all/notebook.png'
+import TitleBox from '../styles-texts/TitleBox'
 
 export default function Events(){
 
   return(
       <S.EventsSection>
-        <S.TitleBox>Eventos</S.TitleBox>
+        <TitleBox>Eventos</TitleBox>
         <S.Content>
           <img src={NotebookImg} alt="Imagem de um notebook"/>
           <S.Texts>

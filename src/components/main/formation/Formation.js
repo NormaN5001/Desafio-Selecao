@@ -1,27 +1,30 @@
 import React from 'react'
 import * as S from './Styles'
-import ComputerLogo from './computer-logo/ComputerLogo'
 import CodeImg from '../../../images/all/code-img.png'
+import ComputerLogo from '../../../images/all/computer-logo.png'
+import TitleBox from '../styles-texts/TitleBox'
+import SubTitleFormation from '../styles-texts/SubTitleFormation'
+import NormalText from '../styles-texts/NormalText'
 
 export default function Formation(){
 
   return(
       <S.FormationSection>
         <S.FormationLeft>
-          <S.TitleBox>Formação</S.TitleBox>
+          <TitleBox>Formação</TitleBox>
           <S.FrontEnd>
-            <ComputerLogo/>
+            <img src={ComputerLogo} alt="Logo de um computador"/>
             <S.Texts>
-              <h5>Front-End</h5>
-              <p>Quem trabalha com Front End é responsável por desenvolver por meio do código uma interface gráfica e, normalmente, com as tecnologias base da Web: HTML, CSS e JavaScript.</p>
+              <SubTitleFormation>Front-End</SubTitleFormation>
+              <NormalText>Quem trabalha com Front End é responsável por desenvolver por meio do código uma interface gráfica e, normalmente, com as tecnologias base da Web: HTML, CSS e JavaScript.</NormalText>
             </S.Texts>
           </S.FrontEnd>
 
           <S.BackEnd>
-            <ComputerLogo/>
+            <img src={ComputerLogo} alt="Logo de um computador"/>
             <S.Texts>
-              <h5>BackEnd-End</h5>
-              <p>O Back-End trabalha em boa parte dos casos fazendo a ponte entre os dados que vem do navegador rumo ao banco de dados e vice-versa, sempre aplicando as devidas regras de negócio, validações e garantias num ambiente restrito ao usuário final (ou seja, onde ele não consegue acessar ou manipular algo).</p>
+              <SubTitleFormation>Back-End</SubTitleFormation>
+              <NormalText>O Back-End trabalha em boa parte dos casos fazendo a ponte entre os dados que vem do navegador rumo ao banco de dados e vice-versa, sempre aplicando as devidas regras de negócio, validações e garantias num ambiente restrito ao usuário final (ou seja, onde ele não consegue acessar ou manipular algo).</NormalText>
             </S.Texts>
           </S.BackEnd>
         </S.FormationLeft>
