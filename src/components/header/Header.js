@@ -1,7 +1,7 @@
 import React from 'react'
 import * as S from './Styles'
 
-import TopHeader from './top/Top'
+import TopHeader from './navegation/Navegation'
 import SubscriptionHeader from './subscription/Subscription'
 
 export default function Header(){

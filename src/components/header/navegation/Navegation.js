@@ -2,8 +2,11 @@ import React, {useState} from 'react'
 import * as S from './Styles'
 
 import Logo from '../../../images/all/logo-vnw-small.png'
+import MenuMobile from '../menuMobile/MenuMobile'
+import IconClose from '../../../images/all/icon-mobile-close.png'
+import IconOpen from '../../../images/all/icon-mobile-open.png'
 
-export default function Top(){
+export default function Navegation(){
 
   const goToTop = ()=>{
     window.scrollTo({
@@ -43,7 +46,11 @@ export default function Top(){
     })
   }
 
+  const [menu, setMenu] = useState(true)
 
+  const SetMenuMobile = () =>{
+    setMenu(!menu)
+  }
 
   return(
     <>
@@ -57,16 +64,13 @@ export default function Top(){
             <S.Items onClick={()=>{goToEvents()}}>Eventos</S.Items>
             <S.Items onClick={()=>{goToContacts()}}>Contatos</S.Items>
           </S.UList>
-
-          <S.UListMobile>
-            <S.Items onClick={()=>{goToAbout()}}>Sobre</S.Items>
-            <S.Items onClick={()=>{goToFormation()}}>Formação</S.Items>
-            <S.Items onClick={()=>{goToTeam()}}>Equipe</S.Items>
-            <S.Items onClick={()=>{goToEvents()}}>Eventos</S.Items>
-            <S.Items onClick={()=>{goToContacts()}}>Contatos</S.Items>
-          </S.UListMobile>
       </nav>
       </S.TopSection>
+      <S.ContentMobile>
+        {menu && <MenuMobile/>}
+        {menu ? <img onClick={()=>{SetMenuMobile()}} src={IconOpen} alt="Icone para abrir o menu"/> : <img onClick={()=>{SetMenuMobile()}} src={IconClose} alt="Icone para fechar o menu"/>}
+        
+      </S.ContentMobile>
     </>
   )
 }

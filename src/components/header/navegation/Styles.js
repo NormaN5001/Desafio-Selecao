@@ -40,32 +40,17 @@ export const Items = styled.li`
     font-size: 1.3rem;
     padding: 0 15px 3px 15px;
   }
-  @media(max-width: 1000px){
-    line-height: 50px;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    border-radius: 0;
-    &:hover{
-      background-color: #212121;
-      border: none;
-    }
-  }
 `
-export const UListMobile = styled.ul`
-  position: relative;
+export const ContentMobile = styled.div`
+img{
+  cursor: pointer;
+  width: 30px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
   display: none;
   @media(max-width: 1000px){
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    right: 0;
-
-    list-style: none;
-    background-color: #181818;
-    width: 250px;
-    height: 300px;
+    display: block;  
   }
+}
 `
