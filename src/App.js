@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { createGlobalStyle } from "styled-components"
 import styled from 'styled-components';
 
@@ -17,6 +17,10 @@ const Container = styled.section`
 `
 
 export default function App(){
+
+useEffect(()=>{
+    document.title = "Desafio de Seleção"
+  }, [])
 
   return(
     <Container>

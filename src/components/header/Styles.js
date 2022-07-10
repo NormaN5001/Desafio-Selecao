@@ -6,7 +6,13 @@ export const HeaderSection = styled.section`
   background-image: url(${Background});
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  background-position: fixed;
+
   width: 100%;
   height: 1080px;
+  @media(max-width: 1700px){
+    height: 750px;
+  }
+  @media(max-width: 1290px){
+    height: 600px;
+  }
 `

@@ -14,6 +14,7 @@ export const Card = styled.section`
     height: 200px;
   }
   @media(max-width: 1200px){
+    height: 180px;
     width: 55%;
   }
 `
@@ -46,14 +47,19 @@ export const TitleCard = styled.h2`
   left: 22px;
   color: #00145D;
   font-size: 2.3vw;
+  font-family: 'Montserrat', sans-serif;
 `
 export const SubTitle = styled.h3`
   position: absolute;
   top: 160px;
   left: 22px;
   font-size: 1.8vw;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   color: #272727;
+  @media(max-width: 1200px){
+    top: 130px;
+  }
   span{
     font-weight: 500;
   }

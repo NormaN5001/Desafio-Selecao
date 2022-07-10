@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import * as S from './Styles'
 
 import Logo from '../../../images/all/logo-vnw-small.png'
@@ -57,6 +57,14 @@ export default function Top(){
             <S.Items onClick={()=>{goToEvents()}}>Eventos</S.Items>
             <S.Items onClick={()=>{goToContacts()}}>Contatos</S.Items>
           </S.UList>
+
+          <S.UListMobile>
+            <S.Items onClick={()=>{goToAbout()}}>Sobre</S.Items>
+            <S.Items onClick={()=>{goToFormation()}}>Formação</S.Items>
+            <S.Items onClick={()=>{goToTeam()}}>Equipe</S.Items>
+            <S.Items onClick={()=>{goToEvents()}}>Eventos</S.Items>
+            <S.Items onClick={()=>{goToContacts()}}>Contatos</S.Items>
+          </S.UListMobile>
       </nav>
       </S.TopSection>
     </>
