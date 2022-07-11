@@ -47,6 +47,7 @@ export const Items = styled.li`
 `
 export const ContentMobile = styled.div`
 img{
+  z-index: 1;
   cursor: pointer;
   width: 30px;
   position: absolute;
