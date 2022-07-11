@@ -18,7 +18,7 @@ export const SectionInput = styled.section`
     height: 37px;
     color: #BCE0FD;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.2vw;
+    font-size: 1.2rem;
     padding-left: 5px;
     ::placeholder {
     color: #BCE0FD;
@@ -28,6 +28,11 @@ export const SectionInput = styled.section`
     background-image: url(${SearchImg});
     background-repeat: no-repeat;
     background-position: right;
+    @media(max-width: 500px){
+      width: 100%;
+      height: 60px;
+      background-size: 50px;
+    }
   }
   button{
     width: 37px;
