@@ -7,6 +7,7 @@ export const MenuMobile = styled.nav`
   }
 `
 export const UListMobile = styled.ul`
+  z-index: 1;
   position: relative;
   display: none;
   display: flex;
