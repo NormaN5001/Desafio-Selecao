@@ -18,7 +18,7 @@ export const UListMobile = styled.ul`
   list-style: none;
   border-left: #000 solid 2px;
   border-bottom: #000 solid 2px;
-  background-image: linear-gradient(to bottom right, #00145D 40%, #FF611E 100%);
+  background-image: linear-gradient(to bottom right, #00145D 40%, #FF611E 200%);
   width: 250px;
   height: 300px;
 `

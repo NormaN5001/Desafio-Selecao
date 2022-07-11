@@ -46,7 +46,7 @@ export default function Navegation(){
     })
   }
 
-  const [menu, setMenu] = useState(true)
+  const [menu, setMenu] = useState(false)
 
   const SetMenuMobile = () =>{
     setMenu(!menu)

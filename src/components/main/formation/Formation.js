@@ -13,7 +13,7 @@ export default function Formation(){
         <S.FormationLeft>
           <TitleBox>Formação</TitleBox>
           <S.FrontEnd>
-            <img src={ComputerLogo} alt="Logo de um computador"/>
+            <S.LogoPc src={ComputerLogo} alt="Logo de um computador"/>
             <S.Texts>
               <SubTitleFormation>Front-End</SubTitleFormation>
               <NormalText>Quem trabalha com Front End é responsável por desenvolver por meio do código uma interface gráfica e, normalmente, com as tecnologias base da Web: HTML, CSS e JavaScript.</NormalText>
@@ -21,14 +21,14 @@ export default function Formation(){
           </S.FrontEnd>
 
           <S.BackEnd>
-            <img src={ComputerLogo} alt="Logo de um computador"/>
+            <S.LogoPc src={ComputerLogo} alt="Logo de um computador"/>
             <S.Texts>
               <SubTitleFormation>Back-End</SubTitleFormation>
               <NormalText>O Back-End trabalha em boa parte dos casos fazendo a ponte entre os dados que vem do navegador rumo ao banco de dados e vice-versa, sempre aplicando as devidas regras de negócio, validações e garantias num ambiente restrito ao usuário final (ou seja, onde ele não consegue acessar ou manipular algo).</NormalText>
             </S.Texts>
           </S.BackEnd>
         </S.FormationLeft>
-        <img src={CodeImg} alt="Imagem de um código"/>
+        <S.CodeImg src={CodeImg} alt="Imagem de um código"/>
       </S.FormationSection>
   )
 }

@@ -6,7 +6,7 @@ export default function MenuMobile(){
 
   const goToAbout = ()=>{
     window.scrollTo({
-      top: 1100,
+      top: 1000,
       behavior: "smooth"
     })
   }

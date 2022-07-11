@@ -5,4 +5,7 @@ export const MainSection = styled.section`
   @media(max-width: 1200px){
     margin: 0 20px 0 0;
   }
+  @media(max-width: 1000px){
+    margin: 0 20px 0 20px;
+  }
 `

@@ -6,6 +6,10 @@ export const AboutSection = styled.section`
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  @media(max-width: 1000px){
+    margin-top: 80px;
+    flex-direction: column;
+  }
 `
 export const Logo = styled.img`
   width: 30%;
@@ -19,6 +23,12 @@ export const AboutText = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media(max-width: 1000px){
+    margin-top: 70px;
+    padding-right: 0;
+    justify-content: center;
+    width: 100%;
+  }
 `
 export const TextAbout = styled.div`
   margin-top: 36px;
@@ -27,11 +37,11 @@ export const TextAbout = styled.div`
   color: #000000;
   font-size: 1.2rem;
   font-family: 'Montserrat', sans-serif;
-  @media(max-width: 1200px){
-    margin-top: 25px;
-  }
  }
  @media(max-width: 1200px){
     margin-top: 10px;
+  }
+  @media(max-width: 1000px){
+    text-align: center;
   }
 `
