@@ -29,7 +29,7 @@ export const SectionInput = styled.section`
     background-repeat: no-repeat;
     background-position: right;
     @media(max-width: 500px){
-      width: 100%;
+      width: 88%;
       height: 60px;
       background-size: 50px;
     }
