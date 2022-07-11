@@ -24,8 +24,20 @@ export const Person = styled.div`
     height: 19.35vw;
   }
   @media(max-width: 1200px){
-    width: 17.5vw;
-    height: 17.7vw;
+    width: 30vw;
+    height: 30.2vw;
+  }
+  @media(max-width: 1000px){
+    width: 29vw;
+    height: 29.3vw;
+  }
+  @media(max-width: 768px){
+    width: 45%;
+    height: 39vw;
+  }
+  @media(max-width: 500px){
+    width: 90%;
+    height: 83vw;
   }
 `
 export const Texts = styled.div`
@@ -39,14 +51,26 @@ export const Texts = styled.div`
 `
 export const Name = styled.p`
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.2vw;
+  font-size: 1.2rem;
   font-weight: bold;
   color: #FFFFFF;
+  @media(max-width: 1200px){
+    font-size: 1.5rem;
+  }
+  @media(max-width: 768px){
+    font-size: 1.3rem;
+  }
 `
 export const Office = styled.p`
   margin: 8px 0 12px 0;
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.8vw;
+  font-size: 0.8rem;
   font-weight: 400;
   color: #FFFFFF;
+  @media(max-width: 1200px){
+    font-size: 1.3rem;
+  }
+  @media(max-width: 768px){
+    font-size: 1rem;
+  }
 `

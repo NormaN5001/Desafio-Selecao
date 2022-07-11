@@ -35,4 +35,8 @@ export const Items = styled.li`
     background-color: #00145D;
     border: none;
   }
+  a{
+    text-decoration: none;
+    color: #FFF;
+  }
 `

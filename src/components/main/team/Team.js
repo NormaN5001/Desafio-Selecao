@@ -6,7 +6,7 @@ import TitleBox from '../styles-texts/TitleBox'
 export default function Team(){
 
   return(
-      <S.TeamSection>
+      <S.TeamSection id="team">
         <TitleBox>Equipe</TitleBox>
         <SearchTeam/>
       </S.TeamSection>

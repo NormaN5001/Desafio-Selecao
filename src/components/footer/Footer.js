@@ -10,7 +10,7 @@ import YoutubeImg from '../../images/all/youtube.png'
 export default function Footer(){
 
   return(
-      <S.FooterSection>
+      <S.FooterSection id="footer">
         <S.TitleBox>Contato</S.TitleBox>
         <S.Networks>
           <p>Siga nossas redes sociais e fique conectado com todas as novidades.</p>

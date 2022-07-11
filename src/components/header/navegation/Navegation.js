@@ -15,37 +15,6 @@ export default function Navegation(){
     })
   }
 
-  const goToAbout = ()=>{
-    window.scrollTo({
-      top: 1100,
-      behavior: "smooth"
-    })
-  }
-  const goToFormation = ()=>{
-    window.scrollTo({
-      top: 1900,
-      behavior: "smooth"
-    })
-  }
-  const goToTeam = ()=>{
-    window.scrollTo({
-      top: 2850,
-      behavior: "smooth"
-    })
-  }
-  const goToEvents = ()=>{
-    window.scrollTo({
-      top: 4600,
-      behavior: "smooth"
-    })
-  }
-  const goToContacts = ()=>{
-    window.scrollTo({
-      top: 5300,
-      behavior: "smooth"
-    })
-  }
-
   const [menu, setMenu] = useState(false)
 
   const SetMenuMobile = () =>{
@@ -58,11 +27,11 @@ export default function Navegation(){
         <img onClick={()=>{goToTop()}} src={Logo} alt="Logo do Vai na Web."/>
         <nav>
           <S.UList>
-            <S.Items onClick={()=>{goToAbout()}}>Sobre</S.Items>
-            <S.Items onClick={()=>{goToFormation()}}>Formação</S.Items>
-            <S.Items onClick={()=>{goToTeam()}}>Equipe</S.Items>
-            <S.Items onClick={()=>{goToEvents()}}>Eventos</S.Items>
-            <S.Items onClick={()=>{goToContacts()}}>Contatos</S.Items>
+            <S.Items><a href="#about">Sobre</a></S.Items>
+            <S.Items><a href="#formation">Formação</a></S.Items>
+            <S.Items><a href="#team">Equipe</a></S.Items>
+            <S.Items><a href="#events">Eventos</a></S.Items>
+            <S.Items><a href="#footer">Contatos</a></S.Items>
           </S.UList>
       </nav>
       </S.TopSection>

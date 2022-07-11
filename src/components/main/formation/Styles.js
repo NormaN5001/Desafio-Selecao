@@ -22,6 +22,7 @@ export const FrontEnd = styled.div`
   display: flex;
   margin-top: 30px;
   @media(max-width: 1000px){
+    margin-top: 70px;
     justify-content: center;
   }
 `

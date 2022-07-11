@@ -40,6 +40,10 @@ export const Items = styled.li`
     font-size: 1.3rem;
     padding: 0 15px 3px 15px;
   }
+  a{
+    text-decoration: none;
+    color: #FFF;
+  }
 `
 export const ContentMobile = styled.div`
 img{

@@ -6,7 +6,7 @@ import TitleBox from '../styles-texts/TitleBox'
 export default function Events(){
 
   return(
-      <S.EventsSection>
+      <S.EventsSection id="events">
         <TitleBox>Eventos</TitleBox>
         <S.Content>
           <img src={NotebookImg} alt="Imagem de um notebook"/>

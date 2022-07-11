@@ -9,7 +9,7 @@ import NormalText from '../styles-texts/NormalText'
 export default function Formation(){
 
   return(
-      <S.FormationSection>
+      <S.FormationSection id="formation">
         <S.FormationLeft>
           <TitleBox>Formação</TitleBox>
           <S.FrontEnd>

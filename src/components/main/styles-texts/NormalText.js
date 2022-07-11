@@ -8,7 +8,7 @@ const NormalText = styled.h4`
   font-weight: 500;
   width: 380px;
   @media(max-width: 1000px){
-    width: 50%;
+    width: 80%;
     font-size: 1rem;
   }
 `

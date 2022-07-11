@@ -6,7 +6,7 @@ import TitleBox from '../styles-texts/TitleBox'
 export default function About(){
 
   return(
-      <S.AboutSection>
+      <S.AboutSection id="about">
         <S.Logo src={Logo} alt="Logo do Vai na Web."/>
         <S.AboutText>
           <TitleBox>Sobre o Vai na Web</TitleBox>
