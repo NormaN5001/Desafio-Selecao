@@ -37,6 +37,12 @@ export const TextAbout = styled.div`
   color: #000000;
   font-size: 1.2rem;
   font-family: 'Montserrat', sans-serif;
+  @media(max-width: 500px){
+    font-size: 1rem; 
+  }
+  @media(max-width: 350px){
+    font-size: 0.9rem; 
+  }
  }
  @media(max-width: 1200px){
     margin-top: 10px;

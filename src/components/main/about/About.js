@@ -1,7 +1,17 @@
 import React from 'react'
 import * as S from './Styles'
+import styled from 'styled-components'
 import Logo from '../../../images/all/logo-vnw-big.png'
 import TitleBox from '../styles-texts/TitleBox'
+
+const TitleAbout = styled(TitleBox)`
+  @media(max-width: 500px){
+    font-size: 2.1rem; 
+  }
+  @media(max-width: 350px){
+    font-size: 1.8rem; 
+  }
+`
 
 export default function About(){
 
@@ -9,7 +19,7 @@ export default function About(){
       <S.AboutSection id="about">
         <S.Logo src={Logo} alt="Logo do Vai na Web."/>
         <S.AboutText>
-          <TitleBox>Sobre o Vai na Web</TitleBox>
+          <TitleAbout>Sobre o Vai na Web</TitleAbout>
           <S.TextAbout>
             <p>Fundado em 2017, no Complexo do Alemão, o Vai na Web vem impactando e transformando a vida de jovens das classes C, D e E do Rio de Janeiro e de outros 18 estados do Brasil.</p>
             <p>Muito mais do que compartilhar conhecimento de programação front-end, o programa oferece aulas de inglês e desenvolvimento de habilidades humanas e socioemocionais, que preparam os futuros desenvolvedores para o mundo do trabalho e oferecem um espaço em que é possível descobrir a riqueza de áreas que a tecnologia tem.</p>

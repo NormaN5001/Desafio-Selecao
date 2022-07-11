@@ -22,19 +22,32 @@ export const TitleBox = styled.h1`
     color: #FF611E;
     font-weight: 300;
     @media(max-width: 1290px){
-    font-size: 2.3rem;
+      font-size: 2.3rem;
+      font-weight: bold;
+    }
+    @media(max-width: 600px){
+      font-size: 2rem;
     }
   }
   @media(max-width: 1290px){
     font-size: 2rem;
   }
+  @media(max-width: 600px){
+    font-size: 1.7rem;
+  }
 `
 export const TextLink = styled.h3`
   margin-top: 10px;
   color: #FED5B2;
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   font-family: 'Montserrat', sans-serif;
   span{
     font-weight: 400;
+  }
+  @media(max-width: 768px){
+    font-size: 1rem;
+  }
+  @media(max-width: 500px){
+    width: 70%;   
   }
 `
